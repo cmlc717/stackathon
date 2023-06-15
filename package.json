@@ -17,7 +17,8 @@
     "morgan": "^1.10.0",
     "pg": "^8.8.0",
     "pokedex-promise-v2": "^4.1.1",
-    "uuid4": "^2.0.3"
+    "uuid4": "^2.0.3",
+    "victory": "^36.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",

@@ -19,3 +19,8 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+.pie {
+  width: 600px;
+  height: 600px;
+}

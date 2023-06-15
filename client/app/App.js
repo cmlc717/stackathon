@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from '../features/home/Home';
-import SinglePokemon from '../features/pokemon/singlePokemon';
+import SinglePokemon from '../features/SinglePokemon/singlePokemon';
 
 /**
  * COMPONENT
@@ -14,7 +14,6 @@ const App = () => {
     <Routes>
       <Route path="/*" element={<Home />} />
       <Route to="/home" element={<Home />} />
-      <Route to="/:pokemon" element={<SinglePokemon />} />
     </Routes>
   );
 };

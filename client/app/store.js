@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import singlePokemonReducer from "../features/pokemon/singlePokemonSlice"
+import singlePokemonReducer from "../features/SinglePokemon/singlePokemonSlice"
 
 const store = configureStore({
   reducer: { 
