@@ -19,7 +19,7 @@ const App = () => {
           <AppRoutes />
         </div>
         <footer>
-          <a href="https://www.freepik.com/free-video/futuristic-plexus-structure-loop_179351#position=1&term=technology%20background&from_view=search">Video by Freepik</a>
+          Video by Pressmaster: https://www.pexels.com/video/digital-presentation-of-information-on-a-screen-monitor-3130182/
         </footer>
     </div>
   );
