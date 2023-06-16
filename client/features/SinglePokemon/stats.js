@@ -14,15 +14,17 @@ const Stats = (props) => {
     }
 
     return (
-        <div className = "pie"  data-aos='fade-up'>
+        <div>
             <h2>Stat Distribution</h2>
-            <VictoryPie
-                labels={({datum})=> `${datum.x}: ${datum.y}`}
-                width={700} data={stats} 
-                colorScale={["pink", "cornflowerblue", "darkseagreen", "mediumpurple", "indianred", "lightsalmon"]}
-                style={{ labels: { fill: "white", fontSize: 14} }}
-                radius={({ datum }) => 255 * ( datum.y/255)} 
-            />
+            <div className = "pie" data-aos='fade-up'>
+                <VictoryPie
+                    labels={({datum})=> `${datum.x}: ${datum.y}`}
+                    width={700} data={stats} 
+                    colorScale={["pink", "cornflowerblue", "darkseagreen", "mediumpurple", "indianred", "lightsalmon"]}
+                    style={{ labels: { fill: "white", fontSize: 14} }}
+                    radius={({ datum }) => 255 * ( datum.y/255)} 
+                />
+            </div>
         </div>
     );
 };
