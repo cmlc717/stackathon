@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../features/home/Home';
-import SinglePokemon from '../features/SinglePokemon/singlePokemon';
+import AppRoutes from './AppRoutes';
+import Navbar from '../features/navbar/navbar';
 
 /**
  * COMPONENT
@@ -10,11 +10,18 @@ import SinglePokemon from '../features/SinglePokemon/singlePokemon';
 const App = () => {
 
 
+
+
   return (
-    <Routes>
-      <Route path="/*" element={<Home />} />
-      <Route to="/home" element={<Home />} />
-    </Routes>
+    <div>
+        <Navbar />
+        <div className='content-body'>
+          <AppRoutes />
+        </div>
+        <footer>
+          <a href="https://www.freepik.com/free-video/futuristic-plexus-structure-loop_179351#position=1&term=technology%20background&from_view=search">Video by Freepik</a>
+        </footer>
+    </div>
   );
 };
 

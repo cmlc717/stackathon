@@ -15,7 +15,7 @@ const Moves = (props) => {
     }
 
     return (
-        <div>
+        <div data-aos='fade-up'>
             <h2>Moveset</h2>
             <ul>
                 {moves.map((move) => <li key={uuid4()}>{move}</li>)}

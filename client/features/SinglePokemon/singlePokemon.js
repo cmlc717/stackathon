@@ -16,12 +16,12 @@ const SinglePokemon = () => {
     return (
         <div>
             {(singlePokemon.name)?
-            <div>
+            <div data-aos='zoom-in'>
                 <h1>{singlePokemon.name}</h1>
                 <img key={uuid4()} src={singlePokemon.sprites.front_default}/>
                 <h2>Types</h2>
                 <ul>
-                    {singlePokemon.types.map((type) => <li>{type.type.name}</li> )}
+                    {singlePokemon.types.map((type) => <li key={uuid4()}>{type.type.name}</li> )}
                 </ul>
                 <Stats data={singlePokemon.stats} />
                 <Moves data={singlePokemon.moves} />
