@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='content'>
       <video autoPlay muted loop id="myVideo">
-        <source src="/red_pixels.mp4" type="video/mp4" />
+        <source src="/yellow.mp4" type="video/mp4" />
       </video>        
       <img id='pokedex-logo' src='/pokedex.png'/>
       <nav>      

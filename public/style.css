@@ -1,3 +1,7 @@
+* {
+  color: #f1f1f1;
+}
+
 body, button, input {
   font-family: 'ArcadeClassic', sans-serif;
 }
@@ -9,6 +13,10 @@ a {
 
 label {
   display: block;
+}
+
+button {
+ color: darkred;
 }
 
 nav a {
@@ -37,14 +45,12 @@ form div {
 
 .content {
   background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
 
 .content-body {
   background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
