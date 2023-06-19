@@ -1,7 +1,7 @@
 import React from 'react';
 import AOS from 'aos';
 AOS.init();
-import { VictoryChart, VictoryGroup, VictoryBar } from 'victory';
+import { VictoryChart, VictoryGroup, VictoryBar, VictoryAxis } from 'victory';
 /**
  * COMPONENT
  */
@@ -11,23 +11,46 @@ const CompareStats = (props) => {
     const stats2 = [];
 
     for (let i = 0; i < data1.length; i++) {
-        stats1.push({x: data1[i].stat.name, y: data1[i].base_stat});
-        stats2.push({x: data2[i].stat.name, y: data2[i].base_stat});
+        stats1.push({x: i+1, y: data1[i].base_stat});
+        stats2.push({x: i+1, y: data2[i].base_stat});
     }
 
     return (
-        <div>
+        <div className='statComparison'>
             <h2>Stat Comparison</h2>
             <div className = "bar" data-aos='fade-up'>
-            <VictoryChart>
+            <VictoryChart
+                width={600}
+            >
+                <VictoryAxis
+                    style={{
+                    axis: {
+                        stroke: 'white' 
+                    },
+                    tickLabels: {
+                        fill: 'white'
+                    }, 
+                    }}
+                />
+                <VictoryAxis dependentAxis
+                    style={{
+                    axis: {
+                        stroke: 'white'
+                    },
+                    tickLabels: {
+                        fill: 'white' 
+                    }, 
+                    }}
+                />
                 <VictoryGroup offset={20}
-                    colorScale={"qualitative"}
+                    colorScale={["gold", "lightskyblue"]}
+                    categories={{ x: ["hp", "attack", "defense", "special-attack", "special-defense", "speed"] }}
                 >
                     <VictoryBar
-                    data={data1}
+                    data={stats1}
                     />
                     <VictoryBar
-                    data={data2}
+                    data={stats2}
                     />
                 </VictoryGroup>
             </VictoryChart>

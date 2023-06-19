@@ -15,24 +15,26 @@ const TwoPokemon = () => {
     return (
         <div>
             {(twoPokemon.length > 0)?
-            <div id="twoPokemon">
-                <div id="pokemon1" className="pokemonData" data-aos='zoom-in'>
-                    <h1>{twoPokemon[0].name}</h1>
-                    <img src={twoPokemon[0].sprites.front_default}/>
-                    <h2>Types</h2>
-                    <ul className='types'>
-                        {twoPokemon[0].types.map((type) => <li key={uuid4()} className={type.type.name}>{type.type.name}</li> )}
-                    </ul>
+            <div className='comparisonContainer'>
+                <div id="twoPokemon">
+                    <div id="pokemon1" className="pokemonData" data-aos='zoom-in'>
+                        <h1>{twoPokemon[0].name}</h1>
+                        <img src={twoPokemon[0].sprites.front_default}/>
+                        <h2>Types</h2>
+                        <ul className='types'>
+                            {twoPokemon[0].types.map((type) => <li key={uuid4()} className={type.type.name}>{type.type.name}</li> )}
+                        </ul>
+                    </div>
+                    <div id="pokemon2" className="pokemonData" data-aos='zoom-in'>
+                        <h1>{twoPokemon[1].name}</h1>
+                        <img src={twoPokemon[1].sprites.front_default}/>
+                        <h2>Types</h2>
+                        <ul className='types'>
+                            {twoPokemon[1].types.map((type) => <li key={uuid4()} className={type.type.name}>{type.type.name}</li> )}
+                        </ul>
+                    </div>
                 </div>
-                <div id="pokemon2" className="pokemonData" data-aos='zoom-in'>
-                    <h1>{twoPokemon[1].name}</h1>
-                    <img src={twoPokemon[1].sprites.front_default}/>
-                    <h2>Types</h2>
-                    <ul className='types'>
-                        {twoPokemon[1].types.map((type) => <li key={uuid4()} className={type.type.name}>{type.type.name}</li> )}
-                    </ul>
-                </div>
-                <CompareStats data1={twoPokemon[0].stats} data2={twoPokemon[1].stats}
+                <CompareStats data1={twoPokemon[0].stats} data2={twoPokemon[1].stats} />
             </div>
             : <></>}
         </div>

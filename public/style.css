@@ -21,7 +21,7 @@ button, input {
 }
 
 button:hover {
-  color: rgb(255, 242, 174);
+  background-color: rgb(255, 242, 174);
 }
 
 nav a {
@@ -112,119 +112,165 @@ nav {
   justify-content: space-around;
 }
 
+.comparisonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#pokemon1 {
+  background-color: gold;
+}
+
+#pokemon2 {
+  background-color: lightskyblue;
+}
+
+.pokemonData {
+  width:  60vw;
+  text-align: center;
+  border-radius: 25px;
+  margin: 30px;
+  text-shadow: 0px 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .types {
   list-style-type: none;
-  width: 100px;
+  width:  30vw;
   text-align: center;
   text-shadow: 0px 2px 2px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .normal {
   background-color: rgb(157, 144, 129);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .fire {
   background-color: orange;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .water {
   background-color: rgb(41, 115, 242);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .grass {
   background-color: green;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .electric {
   background-color: rgb(255, 255, 141);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .ice {
   background-color: rgb(154, 218, 239);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .fighting {
   background-color: darkred;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .poison {
   background-color: purple;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .ground {
   background-color: sandybrown;
   border-radius: 25px;
-  margin: 5px;
+  margin: 5px;  
+  width: 150px;
 }
 
 .flying {
   background-color: rgb(180, 180, 255);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .psychic {
   background-color: palevioletred;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .bug {
   background-color: rgb(202, 213, 153);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .rock {
   background-color: rgb(164, 130, 86);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .ghost {
   background-color: rgb(56, 25, 56);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .dark {
   background-color: rgb(75, 75, 75);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .dragon {
   background-color: rgb(43, 0, 128);
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .steel {
   background-color: silver;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 .fairy {
   background-color: pink;
   border-radius: 25px;
   margin: 5px;
+  width: 150px;
 }
 
 /*----------------------------------------------
