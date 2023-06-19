@@ -1,5 +1,6 @@
 * {
   color: #f1f1f1;
+  word-spacing: 5px;
 }
 
 body, button, input {
@@ -19,9 +20,18 @@ button, input {
  color: black;
 }
 
+button:hover {
+  color: rgb(255, 242, 174);
+}
+
 nav a {
   display: inline-block;
   margin: 1em;
+  font-size: larger;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 form div {
@@ -47,6 +57,9 @@ form div {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-body {
@@ -56,7 +69,7 @@ form div {
 }
 
 nav {
-
+  text-align: center;
 }
 
 #pokedex-logo {
@@ -80,10 +93,138 @@ nav {
   font-size: 30px;
   color: black;
   padding: 30px;
+  word-spacing: 10px;
+}
+
+#home {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
 }
 
 .tracking-in-expand {
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#twoPokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.types {
+  list-style-type: none;
+  width: 100px;
+  text-align: center;
+  text-shadow: 0px 2px 2px black;
+}
+
+.normal {
+  background-color: rgb(157, 144, 129);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.fire {
+  background-color: orange;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.water {
+  background-color: rgb(41, 115, 242);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.grass {
+  background-color: green;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.electric {
+  background-color: rgb(255, 255, 141);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.ice {
+  background-color: rgb(154, 218, 239);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.fighting {
+  background-color: darkred;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.poison {
+  background-color: purple;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.ground {
+  background-color: sandybrown;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.flying {
+  background-color: rgb(180, 180, 255);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.psychic {
+  background-color: palevioletred;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.bug {
+  background-color: rgb(202, 213, 153);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.rock {
+  background-color: rgb(164, 130, 86);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.ghost {
+  background-color: rgb(56, 25, 56);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.dark {
+  background-color: rgb(75, 75, 75);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.dragon {
+  background-color: rgb(43, 0, 128);
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.steel {
+  background-color: silver;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.fairy {
+  background-color: pink;
+  border-radius: 25px;
+  margin: 5px;
 }
 
 /*----------------------------------------------
@@ -108,5 +249,13 @@ nav {
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+/* For smaller screens */
+@media only screen and (max-width: 1050px) {
+  #home {
+    flex-direction: column;
   }
 }

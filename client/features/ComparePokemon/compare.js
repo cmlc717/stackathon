@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import uuid4 from "uuid4";
 import AOS from 'aos';
 AOS.init();
-import { fetchTwoPokemon, selectTwoPokemon } from './compareSlice';
-
+import { fetchTwoPokemon } from './compareSlice';
+import TwoPokemon from './twoPokemon';
 
 /**
  * COMPONENT
@@ -31,6 +31,7 @@ const Compare = () => {
 
         <button type="submit">Search</button>
       </form>
+      <TwoPokemon />
     </div>
   );
 };

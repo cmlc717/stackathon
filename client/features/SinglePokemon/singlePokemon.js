@@ -20,8 +20,8 @@ const SinglePokemon = () => {
                 <h1>{singlePokemon.name}</h1>
                 <img key={uuid4()} src={singlePokemon.sprites.front_default}/>
                 <h2>Types</h2>
-                <ul>
-                    {singlePokemon.types.map((type) => <li key={uuid4()}>{type.type.name}</li> )}
+                <ul className='types'>
+                    {singlePokemon.types.map((type) => <li key={uuid4()} className={type.type.name}>{type.type.name}</li> )}
                 </ul>
                 <Stats data={singlePokemon.stats} />
                 <Moves data={singlePokemon.moves} />
