@@ -8,10 +8,10 @@ AOS.init();
  * COMPONENT
  */
 const TeamMember = (props) => {
-    const { teamMember } = props;
+    const { teamMember, i } = props;
 
     return (
-        <div>
+        <div className={`member${i}`}>
             <h1>{teamMember.name}</h1>
             <img src={teamMember.sprites.front_default}/>
             <h2>Types</h2>

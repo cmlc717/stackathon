@@ -24,7 +24,7 @@ const Team = () => {
   return (
     <div className="tracking-in-expand">
       <h2> Select Six Pokemon</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="team" onSubmit={handleSubmit}>
         <input name="0" defaultValue={teamNames[0]} onChange={handleChange}/>
         <input name="1" defaultValue={teamNames[1]} onChange={handleChange}/>
         <input name="2" defaultValue={teamNames[2]} onChange={handleChange}/>

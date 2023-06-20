@@ -27,8 +27,8 @@ const TeamDisplay = () => {
                 </p>
             :<></>}
             {typeof team != "string" && team.length > 0?
-            <div data-aos='zoom-in'>
-                {team.map((teamMember) => <TeamMember key={uuid4()} teamMember={teamMember} /> )}
+            <div className="team-container" data-aos='zoom-in'>
+                {team.map((teamMember, i) => <TeamMember key={uuid4()} i={i} teamMember={teamMember} /> )}
             </div>:<p>Build your team</p>}
         </div>
     );
