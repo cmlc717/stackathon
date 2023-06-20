@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import uuid4 from "uuid4";
-import AOS from 'aos';
-AOS.init();
 import { fetchSinglePokemon, selectPokemon } from './singlePokemonSlice';
 import SinglePokemon from './singlePokemon';
 

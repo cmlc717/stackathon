@@ -30,7 +30,10 @@ const SinglePokemon = () => {
             {singlePokemon.name?
             <div data-aos='zoom-in'>
                 <h1>{singlePokemon.name}</h1>
-                <img key={uuid4()} src={singlePokemon.sprites.front_default}/>
+                <img src={singlePokemon.sprites.front_default}/>
+                <img src={singlePokemon.sprites.back_default}/>
+                <img src={singlePokemon.sprites.front_shiny}/>
+                <img src={singlePokemon.sprites.back_shiny}/>
                 <h2>Types</h2>
                 <ul className='types'>
                     {singlePokemon.types.map((type) => <li key={uuid4()} className={type.type.name}>{type.type.name}</li> )}

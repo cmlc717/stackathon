@@ -14,10 +14,12 @@ a {
 
 label {
   display: block;
+  font-size: 2vh;
 }
 
 button, input {
  color: black;
+ font-size: 2vh;
 }
 
 button:hover {
@@ -109,6 +111,15 @@ nav {
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+table {
+  width: 50vw;
+  font-size: larger;
+}
+
+td {
+  padding: 4px;
+}
+
 #twoPokemon {
   display: flex;
   flex-direction: row;
@@ -153,6 +164,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: larger;
 }
 
 .normal {
@@ -184,14 +196,14 @@ nav {
 }
 
 .electric {
-  background-color: rgb(255, 255, 141);
+  background-color: rgb(198, 198, 60);
   border-radius: 25px;
   margin: 5px;
   width: 150px;
 }
 
 .ice {
-  background-color: rgb(154, 218, 239);
+  background-color: rgb(155, 201, 216);
   border-radius: 25px;
   margin: 5px;
   width: 150px;
@@ -233,7 +245,7 @@ nav {
 }
 
 .bug {
-  background-color: rgb(202, 213, 153);
+  background-color: rgb(150, 161, 99);
   border-radius: 25px;
   margin: 5px;
   width: 150px;
@@ -275,7 +287,7 @@ nav {
 }
 
 .fairy {
-  background-color: pink;
+  background-color: rgb(246, 174, 186);
   border-radius: 25px;
   margin: 5px;
   width: 150px;
