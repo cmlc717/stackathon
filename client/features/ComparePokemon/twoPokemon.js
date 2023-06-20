@@ -14,7 +14,19 @@ const TwoPokemon = () => {
 
     return (
         <div>
-            {(twoPokemon.length > 0)?
+            {twoPokemon==="rejected"? 
+                <p>
+                    One or both of these pokemon do not exist.
+                    <img id = "rejected" src="/rotom-cry.gif" />
+                </p>
+            :<></>}
+            {twoPokemon==="pending"? 
+                <p>
+                    ...Loading...
+                    <img id = "loading" src="/loading.gif"/>
+                </p>
+            :<></>}
+            {typeof twoPokemon != "string" && twoPokemon.length > 0?
             <div className='comparisonContainer'>
                 <div id="twoPokemon">
                     <div id="pokemon1" className="pokemonData" data-aos='zoom-in'>

@@ -15,7 +15,19 @@ const SinglePokemon = () => {
 
     return (
         <div>
-            {(singlePokemon.name)?
+            {singlePokemon==="rejected"? 
+                <p>
+                    This pokemon does not exist.
+                    <img id = "rejected" src="/rotom-cry.gif" />
+                </p>
+            :<></>}
+            {singlePokemon==="pending"? 
+                <p>
+                    ...Loading...
+                    <img id = "loading" src="/loading.gif"/>
+                </p>
+            :<></>}
+            {singlePokemon.name?
             <div data-aos='zoom-in'>
                 <h1>{singlePokemon.name}</h1>
                 <img key={uuid4()} src={singlePokemon.sprites.front_default}/>
@@ -25,8 +37,7 @@ const SinglePokemon = () => {
                 </ul>
                 <Stats data={singlePokemon.stats} />
                 <Moves data={singlePokemon.moves} />
-            </div>
-            : <></>}
+            </div>:<p>Search a pokemon</p>}
         </div>
     );
 };

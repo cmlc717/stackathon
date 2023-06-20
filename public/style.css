@@ -137,6 +137,10 @@ nav {
   align-items: center;
 }
 
+#loading, #rejected {
+  width: 200px;
+}
+
 .types {
   list-style-type: none;
   width:  30vw;

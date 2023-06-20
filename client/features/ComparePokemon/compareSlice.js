@@ -19,6 +19,12 @@ export const twoPokemonSlice = createSlice({
         builder.addCase(fetchTwoPokemon.fulfilled, (state, action) => {
             return action.payload;
         });
+        builder.addCase(fetchTwoPokemon.pending, (state, action) => {
+            return "pending";
+        });
+        builder.addCase(fetchTwoPokemon.rejected, (state, action) => {
+            return "rejected";
+        });
     }
 });
 
