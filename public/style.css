@@ -156,6 +156,10 @@ td {
   width: 200px;
 }
 
+.bar {
+  width: 1500px;
+}
+
 .types {
   list-style-type: none;
   width:  30vw;

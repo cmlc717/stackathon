@@ -18,6 +18,7 @@ const Navbar = () => {
         <Link to='/home'> Home </Link>
         <Link to='/find-mon'> Find Pokemon </Link>
         <Link to='/compare-mon'> Compare Pokemon</Link>
+        <Link to='/team'> Build a Team </Link>
       </nav>
     </div>
   );
