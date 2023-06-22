@@ -18,7 +18,7 @@ const CompareStats = (props) => {
     return (
         <div className='statComparison'>
             <h2>Stat Comparison</h2>
-            <div className = "bar" data-aos='fade-up'>
+            <div className = "bar twoBar" data-aos='fade-up'>
             <VictoryChart
                 width={600}
             >

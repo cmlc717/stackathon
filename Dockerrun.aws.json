@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "cmlc717/pokedex",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 3000,
+        "HostPort": 8000
+      }
+    ],
+    "Logging": "/var/log/nginx"
+  }
