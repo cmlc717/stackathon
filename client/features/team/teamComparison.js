@@ -36,8 +36,8 @@ const TeamCompare = (props) => {
                 <h2>Stat Comparison</h2>
                 <div className = "bar" data-aos='fade-up'>
                     <VictoryChart
-                        domainPadding={100}
-                        width={900}
+                        domainPadding={{x: [50, 0], y: 0}}
+                        width={1000}
                     >
                         <VictoryAxis
                             style={{
@@ -59,10 +59,10 @@ const TeamCompare = (props) => {
                             }
                             }}
                         />
-                        <VictoryGroup offset={20}
+                        <VictoryGroup offset={15}
                             colorScale={["pink", "cornflowerblue", "darkseagreen", "mediumpurple", "indianred", "lightsalmon"]}
                             categories={{ x: ["hp", "attack", "defense", "special-attack", "special-defense", "speed"] }}
-                            padding={{ right: 0, left: 0}}
+                            padding={{ right: 100, left: 100}}
                         >
                             <VictoryBar
                             data={stats1}
